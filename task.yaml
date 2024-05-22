@@ -1,0 +1,17 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: busybox}
+
+params:
+  git-repo-name:
+  MESSAGE:
+
+inputs:
+  - name: ((git-repo-name))
+
+run:
+  path: echo
+  args: [((MESSAGE))); ls]
