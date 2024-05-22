@@ -10,4 +10,4 @@ inputs:
 
 run:
   path: ls
-  args: ["-alR ((GIT-REPO-NAME))"]
+  args: ["-alR", ((GIT-REPO-NAME))]
