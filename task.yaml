@@ -6,7 +6,7 @@ image_resource:
   source: {repository: busybox}
 
 params:
-  GIT-REPO-NAME:
+  GIT-REPO-NAME: ""
 
 inputs:
   - name: $GIT-REPO-NAME
