@@ -5,9 +5,12 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+params:
+  GIT-REPO-NAME:
+
 inputs:
-  - name: ((GIT-REPO-NAME))
+  - name: $GIT-REPO-NAME
 
 run:
   path: ls
-  args: ["-alR", ((GIT-REPO-NAME))]
+  args: ["-alR", $GIT-REPO-NAME]
