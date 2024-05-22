@@ -10,8 +10,8 @@ params:
     MESSAGE:
 
 inputs:
-  - name: ((GIT-REPO-NAME))
+  - name: $GIT-REPO-NAME
 
 run:
   path: ls
-  args: ["((GIT-REPO-NAME)) -alR"]
+  args: ["$GIT-REPO-NAME -alR"]
