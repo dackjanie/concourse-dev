@@ -6,11 +6,15 @@ image_resource:
   source: {repository: busybox}
 
 params:
-  GIT-REPO-NAME: ((GIT-REPO-NAME))
+  MESSAGE: "default message"
 
 inputs:
-  - name: $GIT-REPO-NAME
+  - name: ((GIT-REPO-NAME))
 
 run:
-  path: ls
-  args: ["-alR", $GIT-REPO-NAME]
+  path: sh
+  args:
+    - -exc
+    - |
+      echo "Repo Name: ((GIT-REPO-NAME))"
+      echo "Message: ((MESSAGE))"
