@@ -17,4 +17,4 @@ run:
     - -exc
     - |
       echo "Repo Name: ((GIT-REPO-NAME))"
-      echo "Message: ((MESSAGE))"
+      echo "Message: $MESSAGE"
