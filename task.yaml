@@ -7,6 +7,8 @@ image_resource:
 
 params:
   MESSAGE: ((GIT-REPO-NAME))
+  USERNAME:
+  PASSWORD:
 
 inputs:
   - name: ((GIT-REPO-NAME))
@@ -18,3 +20,5 @@ run:
     - |
       echo "Repo Name: ((GIT-REPO-NAME))"
       echo "Message: $MESSAGE"
+      echo "Username: $USERNAME"
+      echo "Password: $PASSWORD"
