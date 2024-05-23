@@ -6,7 +6,7 @@ image_resource:
   source: {repository: busybox}
 
 params:
-  MESSAGE: "default message"
+  MESSAGE: ((GIT-REPO-NAME))
 
 inputs:
   - name: ((GIT-REPO-NAME))
