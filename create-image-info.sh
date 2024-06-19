@@ -1,4 +1,4 @@
 #!/bin/sh
-REPO=$(cat docker-llm-api/repository)
-TAG=$(cat docker-llm-api/tag)
+REPO=$(cat $(REPO_NAME)/repository)
+TAG=$(cat $(REPO_NAME)/tag)
 echo "${REPO}:${TAG}" > image-info/image
