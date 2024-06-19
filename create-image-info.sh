@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -exc
+set -ex
 
 REPO=$(cat ${REPO_NAME}/repository)
 TAG=$(cat ${REPO_NAME}/tag)
