@@ -7,10 +7,10 @@ TAG=$(cat ${REPO_NAME}/tag)
 IMAGE_INFO="${REPO}:${TAG}"
 echo $IMAGE_INFO | tee image-info/image
 
-# Print numbers from 1 to 5
-for i in {1..5}
+max=10
+for i in `seq 2 $max`
 do
-   echo "Number: $i"
+    echo "$i"
 done
 
 # Print a simple message
