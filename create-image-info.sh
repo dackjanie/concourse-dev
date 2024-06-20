@@ -7,6 +7,8 @@ TAG=$(cat "${REPO_NAME}"/tag)
 IMAGE_INFO="${REPO}:${TAG}"
 echo "$IMAGE_INFO" | tee image-info/image
 
+exit 1
+
 max=10
 for i in $(seq 2 $max); do
     echo "$i"
